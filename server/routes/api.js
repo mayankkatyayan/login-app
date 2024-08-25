@@ -3,7 +3,7 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
-const users = []; // Replace with your user database
+const users = []; 
 
 // Register route
 router.post('/register', (req, res) => {
