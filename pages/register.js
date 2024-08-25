@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './register.module.css';  // Importing CSS module
+import styles from './register.module.css';  
 
 export default function Register() {
     const [username, setUsername] = useState('');
@@ -15,7 +15,7 @@ export default function Register() {
         const data = await res.json();
         if (res.ok) {
             alert('Registration successful!');
-            // Handle successful registration (e.g., redirect to login page)
+           
         } else {
             alert(data.message);
         }
