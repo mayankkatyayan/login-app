@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './login.module.css';  // Importing CSS module
+import styles from './login.module.css'; 
 
 export default function Login() {
     const [username, setUsername] = useState('');
@@ -15,7 +15,7 @@ export default function Login() {
         const data = await res.json();
         if (res.ok) {
             alert('Login successful!');
-            // Handle successful login (e.g., store token, redirect)
+          
         } else {
             alert(data.message);
         }
